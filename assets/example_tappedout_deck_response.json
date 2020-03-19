@@ -1,0 +1,204 @@
+{
+    "user_display": "<a href='/users/Slaytanicpriest/'>Slaytanicpriest</a>",
+    "name": "Dimir taxes",
+    "url": "http://tappedout.net/mtg-decks/dimir-taxes/",
+    "featured_card": "Disruptive Student",
+    "date_updated": 1583961577,
+    "score": 0,
+    "inventory": [
+        [
+            "Barren Moor",
+            {
+                "b": "main",
+                "qty": 1
+            }
+        ],
+        [
+            "Betrayal",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ],
+        [
+            "Blue Elemental Blast",
+            {
+                "b": "side",
+                "qty": 3
+            }
+        ],
+        [
+            "Bojuka Bog",
+            {
+                "b": "main",
+                "qty": 1
+            }
+        ],
+        [
+            "Choking Sands",
+            {
+                "b": "side",
+                "qty": 2
+            }
+        ],
+        [
+            "Contaminated Ground",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ],
+        [
+            "Dimir Aqueduct",
+            {
+                "b": "main",
+                "qty": 2
+            }
+        ],
+        [
+            "Dismal Backwater",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ],
+        [
+            "Disruptive Student",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ],
+        [
+            "Early Frost",
+            {
+                "b": "main",
+                "qty": 3
+            }
+        ],
+        [
+            "Force Spike",
+            {
+                "b": "main",
+                "qty": 3
+            }
+        ],
+        [
+            "Force Spike",
+            {
+                "b": "side",
+                "qty": 1
+            }
+        ],
+        [
+            "Geth's Verdict",
+            {
+                "b": "side",
+                "qty": 2
+            }
+        ],
+        [
+            "Gurmag Angler",
+            {
+                "b": "main",
+                "qty": 2
+            }
+        ],
+        [
+            "Island",
+            {
+                "b": "main",
+                "qty": 7
+            }
+        ],
+        [
+            "Lonely Sandbar",
+            {
+                "b": "main",
+                "qty": 1
+            }
+        ],
+        [
+            "Mind Games",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ],
+        [
+            "Nausea",
+            {
+                "b": "side",
+                "qty": 2
+            }
+        ],
+        [
+            "Paralyze",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ],
+        [
+            "Pestilence",
+            {
+                "b": "main",
+                "qty": 2
+            }
+        ],
+        [
+            "Pharika's Libation",
+            {
+                "b": "side",
+                "qty": 2
+            }
+        ],
+        [
+            "Power Leak",
+            {
+                "b": "main",
+                "qty": 2
+            }
+        ],
+        [
+            "Power Leak",
+            {
+                "b": "side",
+                "qty": 1
+            }
+        ],
+        [
+            "Psychic Venom",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ],
+        [
+            "Relic of Progenitus",
+            {
+                "b": "side",
+                "qty": 2
+            }
+        ],
+        [
+            "Seizures",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ],
+        [
+            "Swamp",
+            {
+                "b": "main",
+                "qty": 4
+            }
+        ]
+    ],
+    "resource_uri": "http://tappedout.net/api/collection/collection:deck/dimir-taxes/",
+    "thumbnail_url": "//static.tappedout.net/chart/0-55-45-0-0.png",
+    "slug": "dimir-taxes",
+    "small_thumbnail_url": "//static.tappedout.net/chart/0-55-45-0-0-small.png",
+    "user": "Slaytanicpriest"
+}
