@@ -94,7 +94,10 @@ def guess_deck_name_from_string(s: str) -> str:
             f"Could not guess tappedout deck name from string {s}")
     else:
         return s.replace(" ", "-")
+<<<<<<< HEAD
 
 
 def get_deck_from_string(s: str) -> "MagicDeck":
     return get_deck_from_name(guess_deck_name_from_string(s))
+=======
+>>>>>>> bdab178fca3b5806f9ee7ab312586447e4194e23
