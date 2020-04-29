@@ -7,8 +7,8 @@ from magic_deck import MagicCard, CARD_FORMAT_X, CARD_FORMAT_NUMBERS
 import cardlineparsing
 """
 Usage:
-    python3 buyhelper.py golos_decklist.txt --remove cards_rasmus_owns.tsv
-"""
+    python3 src/howtobuy.py assets/golos_decklist.txt --remove assets/cards_rasmus_owns.txt --format x
+"""  # noqa
 
 
 def get_cards_from_file_string(s: str) -> List[MagicCard]:
@@ -22,7 +22,7 @@ def count_cards(cards: List[MagicCard]) -> int:
     return sum(card.qty for card in cards)
 
 
-def buyhelper(decklist: str, cards_to_remove_strings: List[str], format: str):
+def how_to_buy(decklist: str, cards_to_remove_strings: List[str], format: str):
     """
     Arguments:
         decklist: str - String pointing to a text file containing a
@@ -100,7 +100,7 @@ def main():
     assert isinstance(args.remove, list)
     assert all(isinstance(s, str) for s in args.remove)
 
-    buyhelper(
+    how_to_buy(
         decklist=args.decklist,
         cards_to_remove_strings=args.remove,
         format=args.format,
