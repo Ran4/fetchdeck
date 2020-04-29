@@ -1,0 +1,76 @@
+1 Dawntreader Elk
+1 Fertilid
+1 Golos, Tireless Pilgrim
+1 Kurkesh, Onakke Ancient
+1 Springbloom Druid
+1 All Suns' Dawn
+1 Aminatou's Augury
+1 Armillary Sphere
+1 Behold the Beyond
+1 Blatant Thievery
+1 Brainstorm
+1 Brass's Bounty
+1 Circuitous Route
+1 Conflux
+1 Cultivate
+1 Dictate of Karametra
+1 Divine Reckoning
+1 Doomsday
+1 Doublecast
+1 Duneblast
+1 Early Harvest
+1 Edge of Autumn
+1 Explosive Vegetation
+1 Farseek
+1 Firemind's Foresight
+1 Flood of Tears
+1 Font of Fertility
+1 Grave Upheaval
+1 Grow from the Ashes
+1 Harrow
+1 In Garruk's Wake
+1 Insidious Will
+1 Karn's Temporal Sundering
+1 Khalni Heart Expedition
+1 Memory's Journey
+1 Necromantic Selection
+1 Neurok Stealthsuit
+1 Part the Waterveil
+1 Plague Wind
+1 Rampant Growth
+1 Reclaim
+1 Renegade Map
+1 Repeated Reverberation
+1 Revival // Revenge
+1 Rude Awakening
+1 Salvage
+1 Search for Tomorrow
+1 Slaughter the Strong
+1 Solar Blaze
+1 Spell Swindle
+1 Spelltwine
+1 Spiritual Asylum
+1 Swarm Intelligence
+1 Tragic Arrogance
+1 Traveler's Amulet
+1 Treacherous Terrain
+1 Unwind
+1 Urza's Ruinous Blast
+1 Volcanic Vision
+1 Wanderer's Twig
+1 Wayfarer's Bauble
+1 Worst Fears
+1 Zendikar Resurgent
+1 Bant Panorama
+1 Blighted Woodland
+1 Evolving Wilds
+15 Forest
+4 Island
+1 Jund Panorama
+1 Krosan Verge
+3 Mountain
+1 Naya Panorama
+3 Plains
+4 Swamp
+1 Terramorphic Expanse
+1 Warped Landscape

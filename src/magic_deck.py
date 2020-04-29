@@ -1,12 +1,32 @@
 from typing import List, Dict, Optional
 
+Qty = int
+
+CARD_FORMAT_X = "x"  # e.g. "4x Shock"
+CARD_FORMAT_NUMBERS = "numbers"  # e.g. "4 shock"
+POSSIBLE_FORMATS = [CARD_FORMAT_X, CARD_FORMAT_NUMBERS]
+
+
 class MagicCard:
-    def __init__(self, name: str, qty: int):
+    def __init__(self, name: str, qty: Qty):
+        assert isinstance(name, str)
+        assert isinstance(qty, int)
+
         self.name = name
         self.qty = qty
 
     def __str__(self) -> str:
-        return f"{self.qty}x {self.name}"
+        return self.format(format=CARD_FORMAT_X)
+
+    def format(self, format: str) -> str:
+        if format == CARD_FORMAT_X:
+            return f"{self.qty}x {self.name}"
+        elif format == CARD_FORMAT_NUMBERS:
+            return f"{self.qty} {self.name}"
+        else:
+            raise Exception(
+                "format must be one of " +
+                ','.join(f'"{format}"' for format in POSSIBLE_FORMATS))
 
     def __repr__(self) -> str:
         return f"<MagicCard name={self.name!r} qty={self.qty}>"
