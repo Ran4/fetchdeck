@@ -1,3 +1,7 @@
+"""
+Usage:
+    python3 src/howtobuy.py assets/golos_decklist.txt --remove assets/cards_rasmus_owns.txt --format x
+"""  # noqa
 from typing import List
 from typing import Counter as CounterType
 from collections import Counter
@@ -5,10 +9,6 @@ import argparse
 
 from magic_deck import MagicCard, CARD_FORMAT_X, CARD_FORMAT_NUMBERS
 import cardlineparsing
-"""
-Usage:
-    python3 src/howtobuy.py assets/golos_decklist.txt --remove assets/cards_rasmus_owns.txt --format x
-"""  # noqa
 
 
 def get_cards_from_file_string(s: str) -> List[MagicCard]:
@@ -95,9 +95,11 @@ def main():
 
     args = parser.parse_args()
 
-    assert isinstance(args.decklist, str)
+    assert isinstance(args.decklist, str), args.decklist
 
-    assert isinstance(args.remove, list)
+    if args.remove is None:
+        args.remove = []
+    assert isinstance(args.remove, list), args.remove
     assert all(isinstance(s, str) for s in args.remove)
 
     how_to_buy(
