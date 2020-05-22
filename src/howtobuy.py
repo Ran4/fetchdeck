@@ -9,6 +9,7 @@ import argparse
 
 from magic_deck import MagicCard, CARD_FORMAT_X, CARD_FORMAT_NUMBERS
 import cardlineparsing
+from tappedout import get_deck_from_string
 
 
 def get_cards_from_file_string(s: str) -> List[MagicCard]:
@@ -22,15 +23,35 @@ def count_cards(cards: List[MagicCard]) -> int:
     return sum(card.qty for card in cards)
 
 
+def _get_cards_we_want_from_decklist_string(decklist: str):
+    looks_like_tappedout_url = "tappedout.net" in decklist
+
+    # E.g. "dimir-taxes.txt" looks like a filename, while "dimir-taxes"
+    # is probably a tappedout.net deck name... very simple heuristic
+    looks_like_filename = "." in decklist
+
+    if looks_like_tappedout_url or not looks_like_filename:
+        deck = get_deck_from_string(decklist)
+        return deck.cards
+    else:
+        return get_cards_from_file_string(decklist)
+
+
 def how_to_buy(decklist: str, cards_to_remove_strings: List[str], format: str):
     """
     Arguments:
-        decklist: str - String pointing to a text file containing a
-            newline-separated list of cards.
+        decklist: str - One of:
+            * A String pointing to a text file containing a
+              newline-separated list of cards (e.g. "my_cool_list.txt")
+            * A tappedout.net url (e.g.
+              "https://tappedout.net/mtg-decks/dimir-taxes")
+            * A tappedout.net deck name (e.g. "dimir-taxes" or "dimir taxes")
+
         remove: List[str] - A list of strings, each pointing to a text file
             containing a newline-separated list of cards.
     """
-    cards_we_want = get_cards_from_file_string(decklist)
+    cards_we_want = _get_cards_we_want_from_decklist_string(decklist)
+
     cards_we_want_counter: CounterType[str] = Counter()
     for card in cards_we_want:
         cards_we_want_counter[card.name] += card.qty
